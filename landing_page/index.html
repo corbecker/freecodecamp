@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <a href="#" class="logo"><img id="header-img" src="images/logo.png"/></a>
+      <ul class="nav-list">
+        <li id="nav-link">Features</li>
+        <li id="nav-link">Pricing</li>
+        <li id="nav-link">Contact</li>
+      </ul>
+      <a href="#" class="toggle-nav">☰</a>
+    </nav>
+  </header>
+</body>
+<script>
+  const navToggle = document.querySelector('.toggle-nav');
+  const navBar = document.querySelector('.nav-list')
+  navToggle.addEventListener('click', () => {
+    navBar.classList.toggle('open');
+  });
+</script>
+</html>
