@@ -4,12 +4,15 @@ body{
 }
 
 #nav-bar{
-  display: fixed;
+  position: fixed;
   top: 0;
   max-width: 100%;
+  width: 100%;
   font-family: 'Lobster', cursive;
   font-size: 2em;
   border-bottom: 5px solid rgba(0,0,0,0.1);
+  background-color: white;
+  z-index: 2;
   /* height: 70px; */
 }
 
