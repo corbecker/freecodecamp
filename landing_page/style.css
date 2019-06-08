@@ -1,3 +1,8 @@
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+
 #nav-bar{
   max-width: 100%;
   font-family: 'Lobster', cursive;
@@ -45,6 +50,54 @@
   display: block;
 }
 
+.container{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.title{
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+.email-signup{
+  text-align: center;
+}
+
+.email-signup form{
+  margin-top: 40px;
+}
+
+.email-signup button {
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  background-color: #426edf;
+  border: none;
+  margin-left: 20px;
+  color: white;
+}
+
+#product{
+  display: block;
+  margin-top: 50px;
+}
+
+#product > *{
+  width: 100%;
+}
+
+.info{
+
+}
+
+.info h2{
+  font-size: 1.2em;
+}
+
+
+
 /* Desktop */
 @media screen and (min-width: 768px) {
 
@@ -81,4 +134,20 @@
   .toggle-nav{
     display: none;
   }
+
+  .title{
+    font-size: 6em;
+  }
+
+  #product{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  #product > *{
+    width: 48%;
+  
+  }
+  
 }
